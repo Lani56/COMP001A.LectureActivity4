@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Page</title>
+</head>
+<body>
+    <header>
+         <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </nav>
+        <h1>Forms</h1>
+    </header>
+    <main>
+        <form action="/submit" method="post">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="adfed@gmail.com">
+
+            <br>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+
+            <br>
+
+            <label for="subscribe">Subscribe to newsletter</label>
+            <input type="checkbox" id="subcribe" name="subscribe" value="yes">
+
+            <br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+
+            <br>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+            <br>
+
+            <label for="file">Upload your photo:</label>
+            <input type="hidden" id="userId" name="userId" value="12345">
+
+            <br>
+
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" name="volume" min="0" max="10">
+
+            <br>
+
+            <label for="birthdate">Birth Date</label>
+            <input type="date" id="birthdate" name="birthdate">
+
+            <br>
+
+            <label for="favcolor">Favorite Color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+
+            <br>
+
+            <input type="submit" value="submit">
+
+            <input type="reset" value="reset">
+            
+        </form>
+    </main>
+    <footer>
+         <p>&copy; 2025 Lani Productions</p>
+    </footer>
+</body>
+</html>
